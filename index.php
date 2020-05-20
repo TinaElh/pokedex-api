@@ -13,12 +13,12 @@
     $data = json_decode($data);
 
     //Show data
-    echo '<pre>';
-    var_dump($data);
-    echo '</pre>';
+    // echo '<pre>';
+    // var_dump($data);
+    // echo '</pre>';
 
     // Get array keys
-    $number = $data->results
+    $number = $data->results;
 
 ?>
 <!DOCTYPE html>
@@ -44,8 +44,8 @@
         <img src="<?= $image ?>" alt="<?= ucfirst($test->name) ?>">
         <ul>
             <li><?= ucfirst($test->name) ?></li>
-            <p>N°<?= $pokemonId ?></p>
-            <a href="./pokemon.php?detail=<?= $test->name.'/'.$pokemonId ?>">Voir plus</a>
+            <p><?= 'N°'.$pokemonId ?></p>
+            <a href="./pokemon.php?path=<?= $test->name.'/'.$pokemonId ?>">Voir plus</a>
         </ul>
     <?php } ?>
 

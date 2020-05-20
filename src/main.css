@@ -1,0 +1,25 @@
+*
+{
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+Style of the index page with all the pokemons
+*/
+
+.card-pokemon
+{
+    width: 16vw;
+    padding: 16px;
+    margin-bottom: 32px;
+    background-color: burlywood;
+}
+
+.card-pokemon img 
+{
+    width: 12vw;
+    height: 12vw;
+}

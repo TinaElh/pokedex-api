@@ -36,12 +36,12 @@
         // Dynamic URL image
         $image = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/$pokemonId.png";
     ?>
-    <img src="<?= $image ?>" alt="<?= ucfirst($test->name) ?>">
-    <ul>
-        <li><?= ucfirst($test->name) ?></li>
-        <p><?= 'N°'.$pokemonId ?></p>
+    <div class="card-pokemon">
+        <img src="<?= $image ?>" alt="<?= ucfirst($test->name) ?>">
+        <p class="id-pokemon"><?= 'N°'.$pokemonId ?></p>
+        <p class="name-pokemon"><?= ucfirst($test->name) ?></p>
         <a href="./pokemon.php?path=<?= $test->name.'/'.$pokemonId ?>">Voir plus</a>
-    </ul>
+    </div>
 <?php } ?>
 
 <?php

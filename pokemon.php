@@ -33,50 +33,46 @@
     // echo '<pre>';
     // var_dump($moves);
     // echo '</pre>';
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokedex</title>
-</head>
-<body>
-    <h1><?= ucfirst($pokemonName) ?></h1>
 
-    <table>
-        <tr>
-            <td>
-                <img src="<?= $image->front_default ?>" alt="<?= ucfirst($pokemonName) ?>">
-            </td>
-        </tr>
-        <tr>
-            <td><?= 'N°'.$id ?></td>
-        </tr>
-        <tr>
-            <th>Ability</th>
-            <td><?= ucfirst($abilities[1]->ability->name) ?></td>
-        </tr>
-        <tr>
-            <th>Moves</th>
-            <td><?= ucfirst($moves->move->name) ?></td>
-        </tr>
-        <tr>
-            <th>Move learn method</th>
-            <td><?= ucfirst($version->move_learn_method->name) ?></td>
-        </tr>
-        <tr>
-            <th>Version group</th>
-            <td><?= ucfirst($version->version_group->name) ?></td>
-        </tr>
-        <tr>
-            <th>Types</th>
-            <td><?= ucfirst($types->type->name) ?></td>
-        </tr>
-        <tr>
-            <th>Weight</th>
-            <td><?= $data->weight ?></td>
-        </tr>
-    </table>
-</body>
-</html>
+    include './includes/header.php';
+?>
+
+<h1><?= ucfirst($pokemonName) ?></h1>
+<table>
+    <tr>
+        <td>
+            <img src="<?= $image->front_default ?>" alt="<?= ucfirst($pokemonName) ?>">
+        </td>
+    </tr>
+    <tr>
+        <td><?= 'N°'.$id ?></td>
+    </tr>
+    <tr>
+        <th>Ability</th>
+        <td><?= ucfirst($abilities[1]->ability->name) ?></td>
+    </tr>
+    <tr>
+        <th>Moves</th>
+        <td><?= ucfirst($moves->move->name) ?></td>
+    </tr>
+    <tr>
+        <th>Move learn method</th>
+        <td><?= ucfirst($version->move_learn_method->name) ?></td>
+    </tr>
+    <tr>
+        <th>Version group</th>
+        <td><?= ucfirst($version->version_group->name) ?></td>
+    </tr>
+    <tr>
+        <th>Types</th>
+        <td><?= ucfirst($types->type->name) ?></td>
+    </tr>
+    <tr>
+        <th>Weight</th>
+        <td><?= $data->weight ?></td>
+    </tr>
+</table>
+
+<?php
+    include './includes/footer.php';
+?>

@@ -47,7 +47,7 @@
     <table>
         <tr>
             <td>
-                <img src="                <?= $image->front_default ?>" alt="<?= ucfirst($pokemonName) ?>">
+                <img src="<?= $image->front_default ?>" alt="<?= ucfirst($pokemonName) ?>">
             </td>
         </tr>
         <tr>
@@ -72,6 +72,10 @@
         <tr>
             <th>Types</th>
             <td><?= ucfirst($types->type->name) ?></td>
+        </tr>
+        <tr>
+            <th>Weight</th>
+            <td><?= $data->weight ?></td>
         </tr>
     </table>
 </body>

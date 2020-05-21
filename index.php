@@ -21,13 +21,13 @@
     $number = $data->results;
 
     include './includes/header.php';
-
 ?>
 
 <h1>Pokedex</h1>
 <div class="wrapper-container">
     <?php foreach($number as $key => $test) { ?>
-        <?php 
+        <?php
+            //include './top-cache.php';
             // Get the url of each pokemon
             $url = $test->url;
             // Split the url
@@ -37,18 +37,18 @@
             // Dynamic URL image
             $image = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/$pokemonId.png";
         ?>
-            <div class="container-card-pokemon">
-                <img src="<?= $image ?>" alt="<?= ucfirst($test->name) ?>">
-                <div class="content-card">
-                    <div class="details-text">
-                        <p class="name-pokemon"><?= ucfirst($test->name) ?></p>
-                        <p class="id-pokemon"><?= 'N°'.$pokemonId ?></p>
-                    </div>
-                    <div class="button">
-                        <a href="./pokemon.php?path=<?= $test->name.'/'.$pokemonId ?>">See more</a>
-                    </div>
+        <div class="container-card-pokemon">
+            <img src="<?= $image ?>" alt="<?= ucfirst($test->name) ?>">
+            <div class="content-card">
+                <div class="details-text">
+                    <p class="name-pokemon"><?= ucfirst($test->name) ?></p>
+                    <p class="id-pokemon"><?= 'N°'.$pokemonId ?></p>
+                </div>
+                <div class="button">
+                    <a href="./pokemon.php?path=<?= $test->name.'/'.$pokemonId ?>">See more</a>
                 </div>
             </div>
+        </div>
     <?php } ?>
 </div>
 

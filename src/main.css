@@ -19,6 +19,12 @@ Style of the index page with all the pokemons
 
 /* Text */
 
+h1
+{
+    font-size: 40px;
+    margin: 40px;
+}
+
 a
 {
     list-style: none;
@@ -26,6 +32,7 @@ a
     color: #FFFF;
     font-weight: bold;
     font-size: 18px;
+    padding: 18px;
 }
 
 p
@@ -48,7 +55,10 @@ p.id-pokemon
 
 .wrapper-container
 {
-    max-width: 40vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 64vw;
     margin: 0 auto;
 }
 

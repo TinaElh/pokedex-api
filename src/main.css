@@ -9,6 +9,7 @@
 body
 {
     background: linear-gradient(to left, #160B15, #221026, #270C2C, #320F38);
+    font-family: 'Fira Sans Condensed', sans-serif;
     color: #ffffff;
 }
 
@@ -16,29 +17,91 @@ body
 Style of the index page with all the pokemons
 */
 
-.card-pokemon
-{
-    width: 16vw;
-    padding: 16px;
-    margin-bottom: 32px;
-    background-color: #F4F4F4;
-    border-radius: 5px;
-    box-shadow: 0 33px 24px rgba(0, 0, 0, 0.06);
-}
+/* Text */
 
 a
 {
     list-style: none;
     text-decoration: none;
+    color: #FFFF;
+    font-weight: bold;
+    font-size: 18px;
 }
 
-.card-pokemon img 
+p
+{
+    color: #000000;
+}
+
+p.name-pokemon
+{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+p.id-pokemon
+{
+    font-size: 18px;
+}
+
+/* Containers */
+
+.wrapper-container
+{
+    max-width: 40vw;
+    margin: 0 auto;
+}
+
+.container-card-pokemon
+{
+    display: flex;
+    flex-direction: column;
+    width: 18vw;
+    height: 24vw;
+    margin: 0px 32px 40px 0px;
+    background-color: #F4F4F4;
+    border-radius: 5px;
+    box-shadow: 0 33px 24px rgba(0, 0, 0, 0.06);
+}
+
+.container-card-pokemon img 
 {
     width: 12vw;
     height: 12vw;
+    margin: 0 auto;
 }
 
-.card-pokemon p
+.container-card-pokemon .content-card
 {
-    color: #000000;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 48%;
+    background-color: #F4F4F4;
+    padding-top: 8px;
+    border-radius: 5px;
+    box-shadow: 0 0px 24px rgba(0, 0, 0, 0.08);
+}
+
+.container-card-pokemon 
+.content-card 
+.details-text
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 8px 12px 40px 12px;
+}
+
+.container-card-pokemon 
+.content-card
+.button
+{
+    width: 8vw;
+    padding: 18px;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+    cursor: pointer;
+    background: linear-gradient(to left, #4E2E9B, #6839B6, #7A41C9, #8043D0);
 }

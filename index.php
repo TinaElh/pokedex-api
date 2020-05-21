@@ -25,24 +25,32 @@
 ?>
 
 <h1>Pokedex</h1>
-<?php foreach($number as $key => $test) { ?>
-    <?php 
-        // Get the url of each pokemon
-        $url = $test->url;
-        // Split the url
-        $parts = explode('/', $url);
-        // Get the second last part of the url
-        $pokemonId = $parts[count($parts) - 2];
-        // Dynamic URL image
-        $image = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/$pokemonId.png";
-    ?>
-    <div class="card-pokemon">
-        <img src="<?= $image ?>" alt="<?= ucfirst($test->name) ?>">
-        <p class="id-pokemon"><?= 'N°'.$pokemonId ?></p>
-        <p class="name-pokemon"><?= ucfirst($test->name) ?></p>
-        <a href="./pokemon.php?path=<?= $test->name.'/'.$pokemonId ?>">Voir plus</a>
-    </div>
-<?php } ?>
+<div class="wrapper-container">
+    <?php foreach($number as $key => $test) { ?>
+        <?php 
+            // Get the url of each pokemon
+            $url = $test->url;
+            // Split the url
+            $parts = explode('/', $url);
+            // Get the second last part of the url
+            $pokemonId = $parts[count($parts) - 2];
+            // Dynamic URL image
+            $image = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/$pokemonId.png";
+        ?>
+            <div class="container-card-pokemon">
+                <img src="<?= $image ?>" alt="<?= ucfirst($test->name) ?>">
+                <div class="content-card">
+                    <div class="details-text">
+                        <p class="name-pokemon"><?= ucfirst($test->name) ?></p>
+                        <p class="id-pokemon"><?= 'N°'.$pokemonId ?></p>
+                    </div>
+                    <div class="button">
+                        <a href="./pokemon.php?path=<?= $test->name.'/'.$pokemonId ?>">See more</a>
+                    </div>
+                </div>
+            </div>
+    <?php } ?>
+</div>
 
 <?php
     include './includes/footer.php';

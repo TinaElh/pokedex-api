@@ -6,5 +6,6 @@
     <title>Pokedex</title>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../src/main.css">
+    <link rel="icon" href="../favicon/favicon.ico">
 </head>
 <body>

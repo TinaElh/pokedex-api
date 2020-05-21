@@ -1,4 +1,4 @@
-<!-- <?php
+<?php
 
 $url = $_SERVER["SCRIPT_NAME"];
 $break = Explode('/', $url);
@@ -15,4 +15,4 @@ if (file_exists($cachefile) && time() - $cachetime < filemtime($cachefile)) {
 
 ob_start(); // Start the output buffer
 
-?> -->
+?>

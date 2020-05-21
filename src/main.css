@@ -6,6 +6,12 @@
     padding: 0;
 }
 
+body
+{
+    background: linear-gradient(to left, #160B15, #221026, #270C2C, #320F38);
+    color: #ffffff;
+}
+
 /*
 Style of the index page with all the pokemons
 */
@@ -15,11 +21,24 @@ Style of the index page with all the pokemons
     width: 16vw;
     padding: 16px;
     margin-bottom: 32px;
-    background-color: burlywood;
+    background-color: #F4F4F4;
+    border-radius: 5px;
+    box-shadow: 0 33px 24px rgba(0, 0, 0, 0.06);
+}
+
+a
+{
+    list-style: none;
+    text-decoration: none;
 }
 
 .card-pokemon img 
 {
     width: 12vw;
     height: 12vw;
+}
+
+.card-pokemon p
+{
+    color: #000000;
 }

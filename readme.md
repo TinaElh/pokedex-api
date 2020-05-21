@@ -1,7 +1,8 @@
 # PokéAPI - Pokedex
 
-## Feature
-You can check informations for each pokemon by clicking on buttons.
+## Features
+- You can check informations for each pokemon by clicking on buttons.
+- Cached ressources
 
 ## Languages
 - HTML

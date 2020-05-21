@@ -21,6 +21,7 @@
     // echo '<pre>';
     // var_dump($data);
     // echo '</pre>';
+    // exit;
 
     //Get objects
     $abilities = $data->abilities;
@@ -31,8 +32,9 @@
 
     //Show objects
     // echo '<pre>';
-    // var_dump($moves);
+    // var_dump($abilities);
     // echo '</pre>';
+    // exit;
 
     include './includes/header.php';
 ?>
@@ -45,7 +47,7 @@
     <table>
         <tr>
             <th>Ability</th>
-            <td><?= ucfirst($abilities[1]->ability->name) ?></td>
+            <td><?= ucfirst($abilities[0]->ability->name) ?></td>
         </tr>
         <tr>
             <th>Moves</th>

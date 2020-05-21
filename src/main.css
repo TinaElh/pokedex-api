@@ -105,3 +105,49 @@ p.id-pokemon
     cursor: pointer;
     background: linear-gradient(to left, #4E2E9B, #6839B6, #7A41C9, #8043D0);
 }
+
+/*
+Style of detail page pokemon
+*/
+
+.information-pokemon
+{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    background-color: #F4F4F4;
+}
+
+table
+{
+    position: absolute;
+    top: 16vw;
+    left: 16vw;
+    width: 32vw;
+    height: 24vw;
+    text-align: left;
+    color: #000000;
+    font-size: 20px;
+}
+
+p.specific-id
+{
+    margin: 32px;
+    font-size: 24px;
+}
+
+img.specific-pokemon
+{
+    width: 40vw;
+    height: 40vw;
+    margin: 40px;
+}
+
+h1.specific-name
+{
+    text-align: center;
+    font-size: 40px;
+    color: #4E2E9B;
+}
